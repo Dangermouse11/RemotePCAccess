@@ -11,9 +11,9 @@ A simple remote PC access tool for Windows that receives commands through email 
 1. Click start listening. RPA will automatically check the mailbox every 3 seconds for new messages.
 1. Send an email to the email you provided with a command and password attached. The expected password is `opensesame` and the supported commands are:
 
- lock,password
- shutdown,password
- restart,password
+    lock,password
+    shutdown,password
+    restart,password
 
 Each of these commands must be entered as the subject of the email. For example, to shut down the computer this .jar is running on, send an email to the email address you typed in with the subject `shutdown,opensesame`. It's very important that no one knows this email as anyone could remotely turn off your computer after brute-forcing the password.
 
